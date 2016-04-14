@@ -7,6 +7,7 @@
 //
 
 #import "WMSettingItem.h"
+NSString *const WMSwitchDidNotificationChange = @"WMSwitchDidNotificationChange";
 
 @implementation WMSettingItem
 

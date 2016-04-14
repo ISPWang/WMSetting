@@ -68,11 +68,11 @@
 }
 - (void)switchChange {
     // 存储数据
-//    WMSettingSwitchItem *switchItem = (WMSettingSwitchItem *)self.item;
+    WMSettingSwitchItem *switchItem = (WMSettingSwitchItem *)self.item;
 
-//    [[NSNotificationCenter defaultCenter] postNotificationName:WM_ThirdPartyBind_NOTIFICATION object:self userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:WMSwitchDidNotificationChange object:self userInfo:nil];
     
-//    switchItem.on = self.switchView.isOn;
+    switchItem.on = self.switchView.isOn;
 }
 - (UILabel *)switchTextLabel {
     if (_switchTextLabel == nil) {
@@ -342,6 +342,9 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

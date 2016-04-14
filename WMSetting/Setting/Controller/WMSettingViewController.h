@@ -14,7 +14,7 @@
 #import "WMSettingCheckItem.h"
 #import "WMSettingLabelItem.h"
 
-//@class WMSettingGroup;
+
 @interface WMSettingViewController : UIViewController
 @property (strong, nonatomic) NSMutableArray *groups;
 
@@ -24,3 +24,4 @@
  */
 - (WMSettingGroup *)addGroup;
 @end
+

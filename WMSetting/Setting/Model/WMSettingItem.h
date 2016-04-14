@@ -31,3 +31,5 @@ typedef void(^WMSettingItemOperation)();
 + (instancetype)itemWithTitle:(NSString *)title;
 + (instancetype)item;
 @end
+
+extern  NSString *const WMSwitchDidNotificationChange;

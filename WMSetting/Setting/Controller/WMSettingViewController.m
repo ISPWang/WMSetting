@@ -8,8 +8,6 @@
 
 #import "WMSettingViewController.h"
 
-//#import "WMThirdAccountViewController.h"
-//#import "WMMineUserInfoModel.h"
 @interface WMSettingViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @end
@@ -34,7 +32,7 @@
     
     UITableView *settingTableView        =[[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     settingTableView.separatorStyle      = UITableViewCellSeparatorStyleNone;
-    //    settingTableView.sectionHeaderHeight = 10;
+    
     settingTableView.sectionFooterHeight = 0;
     settingTableView.delegate            = self;
     settingTableView.dataSource          = self;
@@ -70,7 +68,6 @@
     WMSettingCell *cell = [WMSettingCell cellWithTableView:tableView];
     WMSettingGroup *group = self.groups[indexPath.section];
     cell.item = group.items[indexPath.row];
-//    WMLog(@"----ce%@",cell.item.title);
     cell.indexPath = indexPath;
     return cell;
 }
@@ -110,13 +107,6 @@
             if (arrowItem.readyForDestVc) { // 控制器的准备工作
                 arrowItem.readyForDestVc(arrowItem, destVc);
             }
-//            if ([destVc isKindOfClass:[WMThirdAccountViewController class]]) {
-////                WMLog(@"---");
-//                WMThirdAccountViewController *account = (WMThirdAccountViewController *)destVc;
-//                account.qqStatus = arrowItem.userModel.qqStatus;
-//                account.weiboStatus = arrowItem.userModel.weiboStatus;
-//                account.weixinStatus = arrowItem.userModel.weixinStatus;
-//            }
             [self.navigationController pushViewController:destVc animated:YES];
         }
     }

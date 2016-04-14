@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9472DAF1CBF900B00C827B7 /* UIViewController+WSPMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C9472DAE1CBF900B00C827B7 /* UIViewController+WSPMethod.m */; };
 		C9DBD55C1CBE3A88001136A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD55B1CBE3A88001136A7 /* main.m */; };
 		C9DBD55F1CBE3A88001136A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD55E1CBE3A88001136A7 /* AppDelegate.m */; };
 		C9DBD5621CBE3A88001136A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5611CBE3A88001136A7 /* ViewController.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9472DAD1CBF900B00C827B7 /* UIViewController+WSPMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WSPMethod.h"; sourceTree = "<group>"; };
+		C9472DAE1CBF900B00C827B7 /* UIViewController+WSPMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WSPMethod.m"; sourceTree = "<group>"; };
 		C9DBD5571CBE3A88001136A7 /* WMSetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMSetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DBD55B1CBE3A88001136A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9DBD55D1CBE3A88001136A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				C9DBD55E1CBE3A88001136A7 /* AppDelegate.m */,
 				C9DBD5601CBE3A88001136A7 /* ViewController.h */,
 				C9DBD5611CBE3A88001136A7 /* ViewController.m */,
+				C9472DAD1CBF900B00C827B7 /* UIViewController+WSPMethod.h */,
+				C9472DAE1CBF900B00C827B7 /* UIViewController+WSPMethod.m */,
 				C9DBD5631CBE3A88001136A7 /* Main.storyboard */,
 				C9DBD5661CBE3A88001136A7 /* Assets.xcassets */,
 				C9DBD5681CBE3A88001136A7 /* LaunchScreen.storyboard */,
@@ -454,6 +459,7 @@
 				C9DBD5621CBE3A88001136A7 /* ViewController.m in Sources */,
 				C9DBD55F1CBE3A88001136A7 /* AppDelegate.m in Sources */,
 				C9DBD5D81CBE3B04001136A7 /* WMSettingLabelItem.m in Sources */,
+				C9472DAF1CBF900B00C827B7 /* UIViewController+WSPMethod.m in Sources */,
 				C9DBD5D31CBE3B04001136A7 /* WMSettingArrowItem.m in Sources */,
 				C9DBD5C71CBE3B04001136A7 /* MASLayoutConstraint.m in Sources */,
 				C9DBD5DB1CBE3B04001136A7 /* WMSettingCell.m in Sources */,
@@ -690,6 +696,7 @@
 				C9DBD5861CBE3A88001136A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DBD5871CBE3A88001136A7 /* Build configuration list for PBXNativeTarget "WMSettingTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +705,7 @@
 				C9DBD5891CBE3A88001136A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DBD58A1CBE3A88001136A7 /* Build configuration list for PBXNativeTarget "WMSettingUITests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +714,7 @@
 				C9DBD58C1CBE3A88001136A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
