@@ -8,13 +8,7 @@
 
 #import "WMSettingCell.h"
 #import "WMSettingItem.h"
-#import "WMSettingArrowItem.h"
-#import "WMSettingSwitchItem.h"
-#import "WMSettingLabelItem.h"
-#import "WMSettingValueItem.h"
-#import "WMSettingCheckItem.h"
 
-//#import "WMMineUserInfoModel.h"
 @interface WMSettingCell()
 /**
  *  箭头
@@ -125,7 +119,7 @@
 - (UIImageView *)arrowView
 {
     if (_arrowView == nil) {
-        _arrowView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"btn_arrow_normal"]];
+        _arrowView = [[UIImageView alloc] initWithImage:[self imagesNamedFromCustomBundle:@"btn_arrow_normal"]];
     }
     return _arrowView;
 }
@@ -198,7 +192,7 @@
     
     // 设置背景的图片
     NSUInteger totalRows = [self.tableView numberOfRowsInSection:indexPath.section];
-    NSString *bgName = nil;
+//    NSString *bgName = nil;
     if (totalRows == 1) { // 这组就1行
 //                bgName = @"activity_icon_normal";
     } else if (indexPath.row == 0) { // 首行
@@ -214,7 +208,8 @@
 //    self.selectedBgView.image = [UIImage imageFromContextWithColor:hexColor(f7f8f9)];
 }
 - (void)makeLineViewAddToSuperView:(UIView *)superView{
-    UIView * lineView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"ifree_line"]];
+    UIView * lineView = [[UIImageView alloc] initWithImage:[self imagesNamedFromCustomBundle:@"ifree_line"]];
+    
     [lineView sizeToFit];
     [superView addSubview:lineView];
     [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -262,7 +257,7 @@
     
     if (self.item.badgeValue && [self.item isKindOfClass:[WMSettingArrowItem class]]) {
 //        self.badgeButton.badgeValue = self.item.badgeValue;
-        WMSettingArrowItem *checkItem = (WMSettingArrowItem *)self.item;
+//        WMSettingArrowItem *checkItem = (WMSettingArrowItem *)self.item;
 //        WMLog(@"--%@---%@",checkItem.userModel.weixinStatus, checkItem.userModel);
         [self.bView addSubview:self.arrowView];
         [self.arrowView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -334,14 +329,10 @@
         self.accessoryView = nil;
     }
 }
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (UIImage *)imagesNamedFromCustomBundle:(NSString *)imgName {
+    NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"ImageSetting.bundle"];
+    NSString *imgPath    = [bundlePath stringByAppendingPathComponent:imgName];
+    return [UIImage imageWithContentsOfFile:imgPath];
 }
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];

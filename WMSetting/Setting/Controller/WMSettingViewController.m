@@ -39,12 +39,9 @@
     self.settingTableView                = settingTableView;
     self.settingTableView.rowHeight = 44;
     [self.view addSubview:settingTableView];
-    //    UIEdgeInsets distance = UIEdgeInsetsMake(64, 0, 0, 0);
+        UIEdgeInsets distance = UIEdgeInsetsMake(0, 0, 0, 0);
     [settingTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        make.edges.equalTo(self.view).insets(distance);
-        make.left.and.right.equalTo(self.view);
-        make.top.equalTo(self.view.mas_top).offset(64);
-        make.bottom.equalTo(self.view.mas_bottom);//.offset(- 49);
+        make.edges.equalTo(self.view).insets(distance);
     }];
     self.settingTableView.backgroundColor = [UIColor clearColor];
     
@@ -52,19 +49,16 @@
 }
 
 #pragma mark - Table view data source
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.groups.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     WMSettingGroup *group = self.groups[section];
     return group.items.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     WMSettingCell *cell = [WMSettingCell cellWithTableView:tableView];
     WMSettingGroup *group = self.groups[indexPath.section];
     cell.item = group.items[indexPath.row];
@@ -73,20 +67,17 @@
 }
 
 #pragma mark - 代理
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-{
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     WMSettingGroup *group = self.groups[section];
     return group.footer;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     WMSettingGroup *group = self.groups[section];
     return group.header;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     // 1.取出模型

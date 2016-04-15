@@ -6,13 +6,10 @@
 //  Copyright (c) 2015年 auto. All rights reserved.
 //
 
-//#import "WMBaseTableViewController.h"
 #import "WMSettingCheckGroup.h"
 #import "WMSettingGroup.h"
 #import "WMSettingCell.h"
-#import "WMSettingArrowItem.h"
-#import "WMSettingCheckItem.h"
-#import "WMSettingLabelItem.h"
+#import "WMSettingItem.h"
 
 
 @interface WMSettingViewController : UIViewController

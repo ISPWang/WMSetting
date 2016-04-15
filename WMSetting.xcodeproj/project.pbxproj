@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C9472DAF1CBF900B00C827B7 /* UIViewController+WSPMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C9472DAE1CBF900B00C827B7 /* UIViewController+WSPMethod.m */; };
+		C956409F1CC08A8800FB2E25 /* WMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C956408F1CC08A8800FB2E25 /* WMSettingViewController.m */; };
+		C95640A41CC08A8800FB2E25 /* WMSettingCheckGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C95640971CC08A8800FB2E25 /* WMSettingCheckGroup.m */; };
+		C95640A51CC08A8800FB2E25 /* WMSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C95640991CC08A8800FB2E25 /* WMSettingGroup.m */; };
+		C95640A61CC08A8800FB2E25 /* WMSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C956409B1CC08A8800FB2E25 /* WMSettingItem.m */; };
+		C95640A71CC08A8800FB2E25 /* WMSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C956409E1CC08A8800FB2E25 /* WMSettingCell.m */; };
+		C95640AA1CC08D1A00FB2E25 /* WMCheckSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95640A91CC08D1A00FB2E25 /* WMCheckSettingViewController.m */; };
+		C95640AC1CC0920000FB2E25 /* ImageSetting.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C95640AB1CC0920000FB2E25 /* ImageSetting.bundle */; };
 		C9DBD55C1CBE3A88001136A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD55B1CBE3A88001136A7 /* main.m */; };
 		C9DBD55F1CBE3A88001136A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD55E1CBE3A88001136A7 /* AppDelegate.m */; };
 		C9DBD5621CBE3A88001136A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5611CBE3A88001136A7 /* ViewController.m */; };
@@ -26,20 +33,6 @@
 		C9DBD5CB1CBE3B04001136A7 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5A11CBE3B04001136A7 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		C9DBD5CC1CBE3B04001136A7 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5A31CBE3B04001136A7 /* View+MASAdditions.m */; };
 		C9DBD5CD1CBE3B04001136A7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5A61CBE3B04001136A7 /* ViewController+MASAdditions.m */; };
-		C9DBD5CE1CBE3B04001136A7 /* WMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5AA1CBE3B04001136A7 /* WMSettingViewController.m */; };
-		C9DBD5CF1CBE3B04001136A7 /* btn_arrow_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DBD5AC1CBE3B04001136A7 /* btn_arrow_normal@2x.png */; };
-		C9DBD5D01CBE3B04001136A7 /* btn_arrow_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DBD5AD1CBE3B04001136A7 /* btn_arrow_normal@3x.png */; };
-		C9DBD5D11CBE3B04001136A7 /* ifree_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DBD5AE1CBE3B04001136A7 /* ifree_line@2x.png */; };
-		C9DBD5D21CBE3B04001136A7 /* ifree_line@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DBD5AF1CBE3B04001136A7 /* ifree_line@3x.png */; };
-		C9DBD5D31CBE3B04001136A7 /* WMSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5B21CBE3B04001136A7 /* WMSettingArrowItem.m */; };
-		C9DBD5D41CBE3B04001136A7 /* WMSettingCheckGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5B41CBE3B04001136A7 /* WMSettingCheckGroup.m */; };
-		C9DBD5D51CBE3B04001136A7 /* WMSettingCheckItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5B61CBE3B04001136A7 /* WMSettingCheckItem.m */; };
-		C9DBD5D61CBE3B04001136A7 /* WMSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5B81CBE3B04001136A7 /* WMSettingGroup.m */; };
-		C9DBD5D71CBE3B04001136A7 /* WMSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5BA1CBE3B04001136A7 /* WMSettingItem.m */; };
-		C9DBD5D81CBE3B04001136A7 /* WMSettingLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5BC1CBE3B04001136A7 /* WMSettingLabelItem.m */; };
-		C9DBD5D91CBE3B04001136A7 /* WMSettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5BE1CBE3B04001136A7 /* WMSettingSwitchItem.m */; };
-		C9DBD5DA1CBE3B04001136A7 /* WMSettingValueItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5C01CBE3B04001136A7 /* WMSettingValueItem.m */; };
-		C9DBD5DB1CBE3B04001136A7 /* WMSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBD5C31CBE3B04001136A7 /* WMSettingCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +55,19 @@
 /* Begin PBXFileReference section */
 		C9472DAD1CBF900B00C827B7 /* UIViewController+WSPMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WSPMethod.h"; sourceTree = "<group>"; };
 		C9472DAE1CBF900B00C827B7 /* UIViewController+WSPMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WSPMethod.m"; sourceTree = "<group>"; };
+		C956408E1CC08A8800FB2E25 /* WMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingViewController.h; sourceTree = "<group>"; };
+		C956408F1CC08A8800FB2E25 /* WMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingViewController.m; sourceTree = "<group>"; };
+		C95640961CC08A8800FB2E25 /* WMSettingCheckGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingCheckGroup.h; sourceTree = "<group>"; };
+		C95640971CC08A8800FB2E25 /* WMSettingCheckGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingCheckGroup.m; sourceTree = "<group>"; };
+		C95640981CC08A8800FB2E25 /* WMSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingGroup.h; sourceTree = "<group>"; };
+		C95640991CC08A8800FB2E25 /* WMSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingGroup.m; sourceTree = "<group>"; };
+		C956409A1CC08A8800FB2E25 /* WMSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingItem.h; sourceTree = "<group>"; };
+		C956409B1CC08A8800FB2E25 /* WMSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingItem.m; sourceTree = "<group>"; };
+		C956409D1CC08A8800FB2E25 /* WMSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingCell.h; sourceTree = "<group>"; };
+		C956409E1CC08A8800FB2E25 /* WMSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingCell.m; sourceTree = "<group>"; };
+		C95640A81CC08D1A00FB2E25 /* WMCheckSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCheckSettingViewController.h; sourceTree = "<group>"; };
+		C95640A91CC08D1A00FB2E25 /* WMCheckSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCheckSettingViewController.m; sourceTree = "<group>"; };
+		C95640AB1CC0920000FB2E25 /* ImageSetting.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageSetting.bundle; sourceTree = "<group>"; };
 		C9DBD5571CBE3A88001136A7 /* WMSetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMSetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DBD55B1CBE3A88001136A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9DBD55D1CBE3A88001136A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,30 +109,6 @@
 		C9DBD5A41CBE3B04001136A7 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		C9DBD5A51CBE3B04001136A7 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		C9DBD5A61CBE3B04001136A7 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		C9DBD5A91CBE3B04001136A7 /* WMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingViewController.h; sourceTree = "<group>"; };
-		C9DBD5AA1CBE3B04001136A7 /* WMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingViewController.m; sourceTree = "<group>"; };
-		C9DBD5AC1CBE3B04001136A7 /* btn_arrow_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_arrow_normal@2x.png"; sourceTree = "<group>"; };
-		C9DBD5AD1CBE3B04001136A7 /* btn_arrow_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_arrow_normal@3x.png"; sourceTree = "<group>"; };
-		C9DBD5AE1CBE3B04001136A7 /* ifree_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ifree_line@2x.png"; sourceTree = "<group>"; };
-		C9DBD5AF1CBE3B04001136A7 /* ifree_line@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ifree_line@3x.png"; sourceTree = "<group>"; };
-		C9DBD5B11CBE3B04001136A7 /* WMSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingArrowItem.h; sourceTree = "<group>"; };
-		C9DBD5B21CBE3B04001136A7 /* WMSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingArrowItem.m; sourceTree = "<group>"; };
-		C9DBD5B31CBE3B04001136A7 /* WMSettingCheckGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingCheckGroup.h; sourceTree = "<group>"; };
-		C9DBD5B41CBE3B04001136A7 /* WMSettingCheckGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingCheckGroup.m; sourceTree = "<group>"; };
-		C9DBD5B51CBE3B04001136A7 /* WMSettingCheckItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingCheckItem.h; sourceTree = "<group>"; };
-		C9DBD5B61CBE3B04001136A7 /* WMSettingCheckItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingCheckItem.m; sourceTree = "<group>"; };
-		C9DBD5B71CBE3B04001136A7 /* WMSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingGroup.h; sourceTree = "<group>"; };
-		C9DBD5B81CBE3B04001136A7 /* WMSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingGroup.m; sourceTree = "<group>"; };
-		C9DBD5B91CBE3B04001136A7 /* WMSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingItem.h; sourceTree = "<group>"; };
-		C9DBD5BA1CBE3B04001136A7 /* WMSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingItem.m; sourceTree = "<group>"; };
-		C9DBD5BB1CBE3B04001136A7 /* WMSettingLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingLabelItem.h; sourceTree = "<group>"; };
-		C9DBD5BC1CBE3B04001136A7 /* WMSettingLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingLabelItem.m; sourceTree = "<group>"; };
-		C9DBD5BD1CBE3B04001136A7 /* WMSettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingSwitchItem.h; sourceTree = "<group>"; };
-		C9DBD5BE1CBE3B04001136A7 /* WMSettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingSwitchItem.m; sourceTree = "<group>"; };
-		C9DBD5BF1CBE3B04001136A7 /* WMSettingValueItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingValueItem.h; sourceTree = "<group>"; };
-		C9DBD5C01CBE3B04001136A7 /* WMSettingValueItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingValueItem.m; sourceTree = "<group>"; };
-		C9DBD5C21CBE3B04001136A7 /* WMSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingCell.h; sourceTree = "<group>"; };
-		C9DBD5C31CBE3B04001136A7 /* WMSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +136,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C956408C1CC08A8800FB2E25 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C95640AB1CC0920000FB2E25 /* ImageSetting.bundle */,
+				C956408D1CC08A8800FB2E25 /* Controller */,
+				C95640951CC08A8800FB2E25 /* Model */,
+				C956409C1CC08A8800FB2E25 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C956408D1CC08A8800FB2E25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C956408E1CC08A8800FB2E25 /* WMSettingViewController.h */,
+				C956408F1CC08A8800FB2E25 /* WMSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C95640951CC08A8800FB2E25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C95640961CC08A8800FB2E25 /* WMSettingCheckGroup.h */,
+				C95640971CC08A8800FB2E25 /* WMSettingCheckGroup.m */,
+				C95640981CC08A8800FB2E25 /* WMSettingGroup.h */,
+				C95640991CC08A8800FB2E25 /* WMSettingGroup.m */,
+				C956409A1CC08A8800FB2E25 /* WMSettingItem.h */,
+				C956409B1CC08A8800FB2E25 /* WMSettingItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C956409C1CC08A8800FB2E25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C956409D1CC08A8800FB2E25 /* WMSettingCell.h */,
+				C956409E1CC08A8800FB2E25 /* WMSettingCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C9DBD54E1CBE3A88001136A7 = {
 			isa = PBXGroup;
 			children = (
@@ -177,12 +201,14 @@
 		C9DBD5591CBE3A88001136A7 /* WMSetting */ = {
 			isa = PBXGroup;
 			children = (
+				C956408C1CC08A8800FB2E25 /* Setting */,
 				C9DBD58D1CBE3B04001136A7 /* Masonry */,
-				C9DBD5A71CBE3B04001136A7 /* Setting */,
 				C9DBD55D1CBE3A88001136A7 /* AppDelegate.h */,
 				C9DBD55E1CBE3A88001136A7 /* AppDelegate.m */,
 				C9DBD5601CBE3A88001136A7 /* ViewController.h */,
 				C9DBD5611CBE3A88001136A7 /* ViewController.m */,
+				C95640A81CC08D1A00FB2E25 /* WMCheckSettingViewController.h */,
+				C95640A91CC08D1A00FB2E25 /* WMCheckSettingViewController.m */,
 				C9472DAD1CBF900B00C827B7 /* UIViewController+WSPMethod.h */,
 				C9472DAE1CBF900B00C827B7 /* UIViewController+WSPMethod.m */,
 				C9DBD5631CBE3A88001136A7 /* Main.storyboard */,
@@ -250,69 +276,6 @@
 				C9DBD5A61CBE3B04001136A7 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
-			sourceTree = "<group>";
-		};
-		C9DBD5A71CBE3B04001136A7 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				C9DBD5A81CBE3B04001136A7 /* Controller */,
-				C9DBD5AB1CBE3B04001136A7 /* ImageSetting */,
-				C9DBD5B01CBE3B04001136A7 /* Model */,
-				C9DBD5C11CBE3B04001136A7 /* View */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		C9DBD5A81CBE3B04001136A7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C9DBD5A91CBE3B04001136A7 /* WMSettingViewController.h */,
-				C9DBD5AA1CBE3B04001136A7 /* WMSettingViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C9DBD5AB1CBE3B04001136A7 /* ImageSetting */ = {
-			isa = PBXGroup;
-			children = (
-				C9DBD5AC1CBE3B04001136A7 /* btn_arrow_normal@2x.png */,
-				C9DBD5AD1CBE3B04001136A7 /* btn_arrow_normal@3x.png */,
-				C9DBD5AE1CBE3B04001136A7 /* ifree_line@2x.png */,
-				C9DBD5AF1CBE3B04001136A7 /* ifree_line@3x.png */,
-			);
-			path = ImageSetting;
-			sourceTree = "<group>";
-		};
-		C9DBD5B01CBE3B04001136A7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C9DBD5B11CBE3B04001136A7 /* WMSettingArrowItem.h */,
-				C9DBD5B21CBE3B04001136A7 /* WMSettingArrowItem.m */,
-				C9DBD5B31CBE3B04001136A7 /* WMSettingCheckGroup.h */,
-				C9DBD5B41CBE3B04001136A7 /* WMSettingCheckGroup.m */,
-				C9DBD5B51CBE3B04001136A7 /* WMSettingCheckItem.h */,
-				C9DBD5B61CBE3B04001136A7 /* WMSettingCheckItem.m */,
-				C9DBD5B71CBE3B04001136A7 /* WMSettingGroup.h */,
-				C9DBD5B81CBE3B04001136A7 /* WMSettingGroup.m */,
-				C9DBD5B91CBE3B04001136A7 /* WMSettingItem.h */,
-				C9DBD5BA1CBE3B04001136A7 /* WMSettingItem.m */,
-				C9DBD5BB1CBE3B04001136A7 /* WMSettingLabelItem.h */,
-				C9DBD5BC1CBE3B04001136A7 /* WMSettingLabelItem.m */,
-				C9DBD5BD1CBE3B04001136A7 /* WMSettingSwitchItem.h */,
-				C9DBD5BE1CBE3B04001136A7 /* WMSettingSwitchItem.m */,
-				C9DBD5BF1CBE3B04001136A7 /* WMSettingValueItem.h */,
-				C9DBD5C01CBE3B04001136A7 /* WMSettingValueItem.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C9DBD5C11CBE3B04001136A7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C9DBD5C21CBE3B04001136A7 /* WMSettingCell.h */,
-				C9DBD5C31CBE3B04001136A7 /* WMSettingCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,10 +383,7 @@
 			files = (
 				C9DBD56A1CBE3A88001136A7 /* LaunchScreen.storyboard in Resources */,
 				C9DBD5671CBE3A88001136A7 /* Assets.xcassets in Resources */,
-				C9DBD5CF1CBE3B04001136A7 /* btn_arrow_normal@2x.png in Resources */,
-				C9DBD5D01CBE3B04001136A7 /* btn_arrow_normal@3x.png in Resources */,
-				C9DBD5D11CBE3B04001136A7 /* ifree_line@2x.png in Resources */,
-				C9DBD5D21CBE3B04001136A7 /* ifree_line@3x.png in Resources */,
+				C95640AC1CC0920000FB2E25 /* ImageSetting.bundle in Resources */,
 				C9DBD5651CBE3A88001136A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,30 +409,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9DBD5D51CBE3B04001136A7 /* WMSettingCheckItem.m in Sources */,
-				C9DBD5D91CBE3B04001136A7 /* WMSettingSwitchItem.m in Sources */,
 				C9DBD5CB1CBE3B04001136A7 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				C9DBD5D71CBE3B04001136A7 /* WMSettingItem.m in Sources */,
 				C9DBD5C91CBE3B04001136A7 /* MASViewConstraint.m in Sources */,
 				C9DBD5C41CBE3B04001136A7 /* MASCompositeConstraint.m in Sources */,
 				C9DBD5CA1CBE3B04001136A7 /* NSArray+MASAdditions.m in Sources */,
 				C9DBD5621CBE3A88001136A7 /* ViewController.m in Sources */,
+				C95640A71CC08A8800FB2E25 /* WMSettingCell.m in Sources */,
 				C9DBD55F1CBE3A88001136A7 /* AppDelegate.m in Sources */,
-				C9DBD5D81CBE3B04001136A7 /* WMSettingLabelItem.m in Sources */,
 				C9472DAF1CBF900B00C827B7 /* UIViewController+WSPMethod.m in Sources */,
-				C9DBD5D31CBE3B04001136A7 /* WMSettingArrowItem.m in Sources */,
+				C95640AA1CC08D1A00FB2E25 /* WMCheckSettingViewController.m in Sources */,
 				C9DBD5C71CBE3B04001136A7 /* MASLayoutConstraint.m in Sources */,
-				C9DBD5DB1CBE3B04001136A7 /* WMSettingCell.m in Sources */,
-				C9DBD5CE1CBE3B04001136A7 /* WMSettingViewController.m in Sources */,
 				C9DBD55C1CBE3A88001136A7 /* main.m in Sources */,
+				C95640A51CC08A8800FB2E25 /* WMSettingGroup.m in Sources */,
 				C9DBD5CD1CBE3B04001136A7 /* ViewController+MASAdditions.m in Sources */,
 				C9DBD5CC1CBE3B04001136A7 /* View+MASAdditions.m in Sources */,
 				C9DBD5C81CBE3B04001136A7 /* MASViewAttribute.m in Sources */,
-				C9DBD5DA1CBE3B04001136A7 /* WMSettingValueItem.m in Sources */,
-				C9DBD5D61CBE3B04001136A7 /* WMSettingGroup.m in Sources */,
-				C9DBD5D41CBE3B04001136A7 /* WMSettingCheckGroup.m in Sources */,
 				C9DBD5C51CBE3B04001136A7 /* MASConstraint.m in Sources */,
+				C95640A41CC08A8800FB2E25 /* WMSettingCheckGroup.m in Sources */,
 				C9DBD5C61CBE3B04001136A7 /* MASConstraintMaker.m in Sources */,
+				C956409F1CC08A8800FB2E25 /* WMSettingViewController.m in Sources */,
+				C95640A61CC08A8800FB2E25 /* WMSettingItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

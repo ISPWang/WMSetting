@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WMCheckSettingViewController.h"
 @interface ViewController ()
 
 @end
@@ -20,33 +20,53 @@
     [self setupGroup0];
     [self setupGroup1];
     [self setupGroup2];
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor colorWithRed:1.000 green:0.874 blue:0.851 alpha:1.000];
 }
 - (void)setupGroup0 {
     WMSettingGroup *group = [self addGroup];
-    WMSettingArrowItem *thirdAccount = [WMSettingArrowItem itemWithTitle:@"绑定账号:" destVcClass:nil];
-    thirdAccount.badgeValue =@"10";
+    WMSettingArrowItem *thirdAccount = [WMSettingArrowItem itemWithIcon:@"personal_btn_set" title:@"设置" destVcClass:nil];
+    [UIImage imageNamed:@"photo_icon_wechat"];
     group.items = @[thirdAccount];
 }
 
 - (void)setupGroup1 {
     WMSettingGroup *group = [self addGroup];
     
-    WMSettingLabelItem *uploadQueue = [WMSettingLabelItem itemWithTitle:@"上传队列:" destVcClass:nil];
-    //    self.uploadQueue = uploadQueue;
-    group.items = @[uploadQueue];
+    WMSettingLabelItem *qq = [WMSettingLabelItem
+                              itemWithIcon:@"personal_btn_qq"
+                              title:@"qq"
+                          destVcClass:NSClassFromString(@"WMCheckSettingViewController")];
+     WMSettingLabelItem *weiChat = [WMSettingLabelItem
+                                    itemWithIcon:@"photo_icon_wechat"
+                                    title:@"weiChat"
+                                destVcClass:NSClassFromString(@"WMCheckSettingViewController")];
+     WMSettingLabelItem *weibo = [WMSettingLabelItem
+                                  itemWithIcon:@"photo_icon_weibo"
+                                  title:@"weiBo"
+                              destVcClass:NSClassFromString(@"WMCheckSettingViewController")];
+    weiChat.defaultText = @"微信";
+    qq.defaultText      = @"QQ";
+    weibo.defaultText   = @"微博";
+    
+    qq.readyForDestVc = ^(WMSettingLabelItem *item, WMCheckSettingViewController *descVC) {
+        descVC.sourceItem = item;
+    };
+    weiChat.readyForDestVc = ^(WMSettingLabelItem *item, WMCheckSettingViewController *descVC) {
+        descVC.sourceItem = item;
+    };
+    weibo.readyForDestVc = ^(WMSettingLabelItem *item, WMCheckSettingViewController *descVC) {
+        descVC.sourceItem = item;
+    };
+    
+    group.items = @[qq, weiChat, weibo];
 }
 
 - (void)setupGroup2 {
     WMSettingGroup *group = [self addGroup];
     
-    WMSettingArrowItem *notice = [WMSettingArrowItem itemWithTitle:@"推送通知设置:" destVcClass:nil]; // item 0
+    WMSettingSwitchItem *notice = [WMSettingSwitchItem itemWithTitle:@"推送通知设置:" destVcClass:nil]; // item 0
     WMSettingLabelItem *diskCaches = [WMSettingLabelItem itemWithTitle:@"清理缓存:" destVcClass:nil]; // 清理缓存
-    //    self.diskCaches = diskCaches;
-    diskCaches.defaultText =@"多少";
-    diskCaches.operation = ^{
-        //        [weakSelf cleakDiskForCaches];
-    };
+    diskCaches.defaultText =@"10M";
     
     group.items = @[notice, diskCaches];
 }
